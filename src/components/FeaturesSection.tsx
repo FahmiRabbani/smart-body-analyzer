@@ -1,5 +1,4 @@
-
-import { Weight, Body, PulseIcon, Gauge } from 'lucide-react';
+import { Weight, User, Pulse, Gauge } from 'lucide-react';
 
 const FeaturesSection = () => {
   const features = [
@@ -9,7 +8,7 @@ const FeaturesSection = () => {
       description: "Pengukuran berat presisi hingga 0.1 kg dengan teknologi sensor tekanan canggih"
     },
     {
-      icon: <Body className="health-icon" />,
+      icon: <User className="health-icon" />,
       title: "Pengukuran Tinggi Otomatis",
       description: "Sensor ultrasonik mengukur tinggi badan secara presisi dengan akurasi hingga 0.5 cm"
     },
@@ -19,7 +18,7 @@ const FeaturesSection = () => {
       description: "Hitung BMI dan dapatkan analisis status ideal badan Anda secara real-time"
     },
     {
-      icon: <PulseIcon className="health-icon" />,
+      icon: <Pulse className="health-icon" />,
       title: "Pantau Perkembangan",
       description: "Simpan hasil pengukuran dan pantau perkembangan kesehatan Anda setiap waktu"
     }

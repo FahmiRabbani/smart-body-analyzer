@@ -1,6 +1,5 @@
-
 import { useState } from 'react';
-import { Body, Weight, Calculator, Check } from 'lucide-react';
+import { User, Weight, Calculator, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const HowItWorks = () => {
@@ -11,7 +10,7 @@ const HowItWorks = () => {
       number: 1,
       title: "Naik ke Platform",
       description: "Naik ke platform Smart Body Analyzer dan berdiri tegak menghadap ke depan",
-      icon: <Body />
+      icon: <User />
     },
     {
       number: 2,
