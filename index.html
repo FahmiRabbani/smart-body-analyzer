@@ -1,31 +1,528 @@
 
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Body Analyzer | Alat Pengukur Tinggi dan Berat Badan Otomatis</title>
-    <meta name="description" content="Smart Body Analyzer - Alat pengukur tinggi dan berat badan otomatis dengan deteksi status ideal (BMI). Pantau kesehatan Anda dengan teknologi terkini." />
-    <meta name="author" content="Smart Body" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Body Analyzer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="#" class="logo">
+          <span class="logo-blue">Smart</span><span class="logo-green">Body</span>
+        </a>
+        
+        <nav class="nav-desktop">
+          <a href="#features" class="nav-link">Fitur</a>
+          <a href="#bmi" class="nav-link">BMI</a>
+          <a href="#how-it-works" class="nav-link">Cara Kerja</a>
+          <a href="#specs" class="nav-link">Spesifikasi</a>
+        </nav>
+        
+        <button class="btn btn-primary btn-desktop">Hubungi Kami</button>
+        
+        <button class="menu-toggle" id="menuToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="menu-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-mobile">
+          <a href="#features" class="nav-link">Fitur</a>
+          <a href="#bmi" class="nav-link">BMI</a>
+          <a href="#how-it-works" class="nav-link">Cara Kerja</a>
+          <a href="#specs" class="nav-link">Spesifikasi</a>
+          <button class="btn btn-primary btn-mobile">Hubungi Kami</button>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <meta property="og:title" content="Smart Body Analyzer | Alat Pengukur Tinggi dan Berat Badan Otomatis" />
-    <meta property="og:description" content="Smart Body Analyzer - Alat pengukur tinggi dan berat badan otomatis dengan deteksi status ideal (BMI). Pantau kesehatan Anda dengan teknologi terkini." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <main>
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="gradient-text">Smart Body Analyzer</span>
+            </h1>
+            <h2 class="hero-subtitle">
+              Alat Pengukur Tinggi dan Berat Badan Otomatis dengan Deteksi Status Ideal
+            </h2>
+            <p class="hero-description">
+              Pantau kesehatan Anda dengan presisi tinggi. Smart Body Analyzer mengukur berat badan, tinggi, dan menghitung BMI secara akurat dalam hitungan detik.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary">Pelajari Lebih Lanjut</button>
+              <button class="btn btn-outline">Lihat Demo</button>
+            </div>
+          </div>
+          
+          <div class="hero-image">
+            <div class="device-mockup">
+              <div class="device-display">
+                <div class="device-text">Smart Body</div>
+                <div class="device-platform">
+                  <span>Tinggi & Berat</span>
+                </div>
+                <div class="device-bar"></div>
+              </div>
+              <div class="device-decoration circle1"></div>
+              <div class="device-decoration circle2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@smartbody" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Fitur Unggulan</h2>
+          <p class="section-description">
+            Smart Body Analyzer dilengkapi dengan teknologi terdepan untuk memberikan pengalaman pengukuran berat dan tinggi badan yang mudah dan akurat
+          </p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-content">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                  <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                  <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                </svg>
+              </div>
+              <h3 class="feature-title">Pengukuran Berat Akurat</h3>
+              <p class="feature-description">Pengukuran berat presisi hingga 0.1 kg dengan teknologi sensor tekanan canggih</p>
+            </div>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-content">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h3 class="feature-title">Pengukuran Tinggi Otomatis</h3>
+              <p class="feature-description">Sensor ultrasonik mengukur tinggi badan secara presisi dengan akurasi hingga 0.5 cm</p>
+            </div>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-content">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="8"></circle>
+                  <path d="M12 2v2"></path>
+                  <path d="M12 20v2"></path>
+                  <path d="M20 12h2"></path>
+                  <path d="M2 12h2"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Kalkulasi BMI Instan</h3>
+              <p class="feature-description">Hitung BMI dan dapatkan analisis status ideal badan Anda secara real-time</p>
+            </div>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-content">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">Pantau Perkembangan</h3>
+              <p class="feature-description">Simpan hasil pengukuran dan pantau perkembangan kesehatan Anda setiap waktu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- BMI Section -->
+    <section id="bmi" class="bmi-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Memahami BMI Anda</h2>
+          <p class="section-description">
+            Body Mass Index (BMI) adalah parameter penting untuk menilai apakah berat badan Anda ideal dibandingkan tinggi badan
+          </p>
+        </div>
+        
+        <div class="bmi-card">
+          <div class="bmi-categories">
+            <h3 class="bmi-subtitle">Kategori BMI</h3>
+            <div class="bmi-indicators">
+              <button class="bmi-indicator-btn active" data-bmi="underweight">
+                <div class="bmi-indicator blue"></div>
+                <span>Kurus</span>
+              </button>
+              <button class="bmi-indicator-btn" data-bmi="normal">
+                <div class="bmi-indicator green"></div>
+                <span>Normal</span>
+              </button>
+              <button class="bmi-indicator-btn" data-bmi="overweight">
+                <div class="bmi-indicator yellow"></div>
+                <span>Kelebihan Berat Badan</span>
+              </button>
+              <button class="bmi-indicator-btn" data-bmi="obese">
+                <div class="bmi-indicator red"></div>
+                <span>Obesitas</span>
+              </button>
+            </div>
+            
+            <div class="bmi-scale">
+              <div class="bmi-scale-colors">
+                <div class="scale-blue"></div>
+                <div class="scale-green"></div>
+                <div class="scale-yellow"></div>
+                <div class="scale-red"></div>
+              </div>
+              <div class="bmi-scale-labels">
+                <span>16</span>
+                <span>18.5</span>
+                <span>25</span>
+                <span>30</span>
+                <span>35+</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bmi-description" id="bmiDescription">
+            <h4 class="bmi-category">Kurus <span>(< 18.5)</span></h4>
+            <p>BMI kurang dari 18.5 mengindikasikan berat badan kurang. Ini dapat berhubungan dengan kekurangan nutrisi, gangguan makan, atau kondisi kesehatan tertentu.</p>
+          </div>
+          
+          <div class="bmi-calculation">
+            <h4>Cara Menghitung BMI</h4>
+            <div class="bmi-formula">
+              <p>BMI = Berat Badan (kg) / (Tinggi Badan (m) × Tinggi Badan (m))</p>
+            </div>
+            <p class="bmi-note">
+              Smart Body Analyzer menghitung BMI Anda secara otomatis dan memberikan analisis status berat badan Anda secara instan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Cara Kerja</h2>
+          <p class="section-description">
+            Smart Body Analyzer dirancang untuk pengalaman pengguna yang mudah dan intuitif
+          </p>
+        </div>
+        
+        <div class="how-it-works-content">
+          <div class="visual-demo">
+            <div class="device-demo">
+              <div class="device-screen">
+                <div class="step-indicator">Step <span id="currentStep">1</span></div>
+              </div>
+              <div class="device-platform">
+                <span>Smart Platform</span>
+              </div>
+              
+              <div class="step-visualization" id="stepVisualization">
+                <!-- Step visuals will be inserted by JavaScript -->
+              </div>
+            </div>
+          </div>
+          
+          <div class="steps-container">
+            <div class="step active" data-step="1">
+              <div class="step-number">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="step-info">
+                <h3>Naik ke Platform</h3>
+                <p>Naik ke platform Smart Body Analyzer dan berdiri tegak menghadap ke depan</p>
+              </div>
+            </div>
+            
+            <div class="step" data-step="2">
+              <div class="step-number">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                  <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                  <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                </svg>
+              </div>
+              <div class="step-info">
+                <h3>Pengukuran Otomatis</h3>
+                <p>Alat secara otomatis mengukur tinggi dan berat badan dalam hitungan detik</p>
+              </div>
+            </div>
+            
+            <div class="step" data-step="3">
+              <div class="step-number">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 2H5a1 1 0 0 0-1 1v10"></path>
+                  <path d="M15 2v10h5a1 1 0 0 0 1-1V5c0-2.8-3.2-4-5-3Z"></path>
+                  <path d="M7 13H2V5.5C2 4.1 3.1 3 4.5 3H7"></path>
+                  <path d="M15 13h6.5a4.5 4.5 0 1 1 0 9H16"></path>
+                  <path d="M13 16h-2a4 4 0 0 0-4 4v2h7"></path>
+                  <path d="M2 22v-6a4 4 0 0 1 4-4h3"></path>
+                </svg>
+              </div>
+              <div class="step-info">
+                <h3>Kalkulasi BMI</h3>
+                <p>Sistem menghitung BMI dan menentukan status ideal tubuh Anda</p>
+              </div>
+            </div>
+            
+            <div class="step" data-step="4">
+              <div class="step-number">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div class="step-info">
+                <h3>Lihat Hasil</h3>
+                <p>Hasil pengukuran ditampilkan pada layar LCD dengan informasi lengkap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specs" class="specs-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Spesifikasi Teknis</h2>
+          <p class="section-description">
+            Smart Body Analyzer dirancang dengan spesifikasi teknis terbaik untuk memberikan akurasi dan kehandalan yang tinggi
+          </p>
+        </div>
+        
+        <div class="specs-content">
+          <div class="specs-table-container">
+            <table class="specs-table">
+              <thead>
+                <tr>
+                  <th>Kategori</th>
+                  <th>Spesifikasi</th>
+                  <th>Nilai</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Pengukuran Berat</td>
+                  <td>Rentang Berat</td>
+                  <td>5 kg - 180 kg</td>
+                </tr>
+                <tr>
+                  <td>Pengukuran Berat</td>
+                  <td>Akurasi</td>
+                  <td>± 0.1 kg</td>
+                </tr>
+                <tr>
+                  <td>Pengukuran Berat</td>
+                  <td>Unit</td>
+                  <td>kg / lb</td>
+                </tr>
+                <tr>
+                  <td>Pengukuran Tinggi</td>
+                  <td>Rentang Tinggi</td>
+                  <td>100 cm - 220 cm</td>
+                </tr>
+                <tr>
+                  <td>Pengukuran Tinggi</td>
+                  <td>Akurasi</td>
+                  <td>± 0.5 cm</td>
+                </tr>
+                <tr>
+                  <td>Pengukuran Tinggi</td>
+                  <td>Unit</td>
+                  <td>cm / inch</td>
+                </tr>
+                <tr>
+                  <td>Display</td>
+                  <td>Jenis</td>
+                  <td>LCD Digital 5 inch</td>
+                </tr>
+                <tr>
+                  <td>Display</td>
+                  <td>Informasi</td>
+                  <td>Tinggi, Berat, BMI, Status</td>
+                </tr>
+                <tr>
+                  <td>Fisik</td>
+                  <td>Dimensi</td>
+                  <td>40 × 60 × 220 cm</td>
+                </tr>
+                <tr>
+                  <td>Fisik</td>
+                  <td>Berat Alat</td>
+                  <td>15 kg</td>
+                </tr>
+                <tr>
+                  <td>Daya</td>
+                  <td>Sumber</td>
+                  <td>AC 220V / Battery</td>
+                </tr>
+                <tr>
+                  <td>Daya</td>
+                  <td>Konsumsi Daya</td>
+                  <td>10 Watt</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="specs-features">
+            <div class="features-card">
+              <h3>Fitur Lainnya</h3>
+              <div class="features-tags">
+                <span class="feature-tag">Pengukuran tinggi dan berat otomatis</span>
+                <span class="feature-tag">Kalkulasi BMI instan</span>
+                <span class="feature-tag">Display LCD digital</span>
+                <span class="feature-tag">Kalibrasi otomatis</span>
+                <span class="feature-tag">Mode hemat energi</span>
+                <span class="feature-tag">Penyimpanan hasil pengukuran</span>
+                <span class="feature-tag">Konektor USB untuk transfer data</span>
+                <span class="feature-tag">Portable dan mudah dipindahkan</span>
+                <span class="feature-tag">Suara dan panduan penggunaan</span>
+                <span class="feature-tag">Bahan material premium</span>
+              </div>
+            </div>
+            
+            <div class="advantages-card">
+              <h3>Keunggulan</h3>
+              <ul class="advantages-list">
+                <li>Akurasi pengukuran tinggi dan berat tertinggi di kelasnya</li>
+                <li>Proses pengukuran hanya membutuhkan waktu kurang dari 5 detik</li>
+                <li>Analisis BMI yang komprehensif dengan saran kesehatan</li>
+                <li>Material berkualitas tinggi dengan daya tahan lama</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <!-- CTA Section -->
+      <div class="footer-cta">
+        <h3>Siap untuk mengukur kesehatan Anda dengan presisi?</h3>
+        <p>Smart Body Analyzer adalah solusi terbaik untuk mengukur tinggi dan berat badan secara presisi, serta mengetahui status ideal tubuh Anda.</p>
+        <div class="cta-buttons">
+          <button class="btn btn-white">Pesan Sekarang</button>
+          <button class="btn btn-outline-white">Hubungi Kami</button>
+        </div>
+      </div>
+      
+      <!-- Footer Content -->
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <span class="logo-blue">Smart</span><span class="logo-green">Body</span>
+          </div>
+          <p>Alat Pengukur Tinggi dan Berat Badan Otomatis dengan Deteksi Status Ideal (BMI)</p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Produk</h3>
+            <ul>
+              <li><a href="#features">Fitur</a></li>
+              <li><a href="#">Harga</a></li>
+              <li><a href="#">Demo</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Dukungan</h3>
+            <ul>
+              <li><a href="#">Panduan Pengguna</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kontak</a></li>
+              <li><a href="#">Garansi</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Kontak</h3>
+            <ul class="contact-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Jl. Kesehatan No. 123, Jakarta</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+62 123 4567 890</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>info@smartbody.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Smart Body Analyzer. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
