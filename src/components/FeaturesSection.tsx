@@ -1,4 +1,5 @@
-import { Weight, User, Pulse, Gauge } from 'lucide-react';
+
+import { Weight, User, Activity, Gauge } from 'lucide-react';
 
 const FeaturesSection = () => {
   const features = [
@@ -18,7 +19,7 @@ const FeaturesSection = () => {
       description: "Hitung BMI dan dapatkan analisis status ideal badan Anda secara real-time"
     },
     {
-      icon: <Pulse className="health-icon" />,
+      icon: <Activity className="health-icon" />,
       title: "Pantau Perkembangan",
       description: "Simpan hasil pengukuran dan pantau perkembangan kesehatan Anda setiap waktu"
     }
